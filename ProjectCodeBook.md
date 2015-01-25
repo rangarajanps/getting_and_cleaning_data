@@ -22,16 +22,19 @@ Based on measurements, mean, standard deviation of different parameters were cal
 <ul>
 <li>Activity - Factor with 6 levels</li>
 <li>   Stores the name of the activity which was performed during measurement</li>
+</ul>
+
 1.            WALKING
 2.   WALKING_UPSTAIRS
 3. WALKING_DOWNSTAIRS
 4.            SITTING
 5.           STANDING
 6.             LAYING
-</ul>
+
 
 <ul>
 <li>66 Variables - list below capture the mean and standard deviation for measurements taken in 3 Axis - X, Y and Z</li>
+</ul>
 
 1. time.Body.Accelero.mean.X
 2.	time.Body.Accelero.mean.Y
@@ -100,4 +103,3 @@ Based on measurements, mean, standard deviation of different parameters were cal
 65.	freqDomSignal.Body.Body.Gyro.Mag.std-dev.
 66.	freqDomSignal.Body.Body.Gyro.JerkMag.std-dev.
 
-</ul>
