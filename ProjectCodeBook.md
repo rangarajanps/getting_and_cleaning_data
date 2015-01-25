@@ -6,6 +6,7 @@ output: html_document
 ---
 
 Data files contain the following 3 attributes
+
 1. Subject i.e. person whose measurement was taken
 2. Activity i.e. what is the activity which the person performed while readings were taken
 3. Observations i.e. measurement points in 3 Axis X, Y and Z
@@ -13,14 +14,14 @@ Data files contain the following 3 attributes
 Based on measurements, mean, standard deviation of different parameters were calculated and stored in it
 
 <ul>
-<li>Subject int</li>
+<li>Subject - int</li>
 <li>  <p>Stores the value of person whose measurement was taken</p>
   <p>Takes a value of 1 to 30</p></li>
 </ul>
 
 <ul>
-<li>Activity Factor with 6 levels
-<li>   Stores the name of the activity which was performed during measurement
+<li>Activity - Factor with 6 levels</li>
+<li>   Stores the name of the activity which was performed during measurement</li>
 1.            WALKING
 2.   WALKING_UPSTAIRS
 3. WALKING_DOWNSTAIRS
@@ -30,17 +31,17 @@ Based on measurements, mean, standard deviation of different parameters were cal
 </ul>
 
 <ul>
-66 Variables list below capture the mean and standard deviation for measurements taken in 3 Axis - X, Y and Z
+<li>66 Variables - list below capture the mean and standard deviation for measurements taken in 3 Axis - X, Y and Z</li>
 
-01. time.Body.Accelero.mean.X
-02.	time.Body.Accelero.mean.Y
-03.	time.Body.Accelero.mean.Z
-04.	time.Gravity.Accelero.mean.X
-05.	time.Gravity.Accelero.mean.Y
-06.	time.Gravity.Accelero.mean.Z
-07.	time.Body.Accelero.Jerk.mean.X
-08.	time.Body.Accelero.Jerk.mean.Y
-09.	time.Body.Accelero.Jerk.mean.Z
+1. time.Body.Accelero.mean.X
+2.	time.Body.Accelero.mean.Y
+3.	time.Body.Accelero.mean.Z
+4.	time.Gravity.Accelero.mean.X
+5.	time.Gravity.Accelero.mean.Y
+6.	time.Gravity.Accelero.mean.Z
+7.	time.Body.Accelero.Jerk.mean.X
+8.	time.Body.Accelero.Jerk.mean.Y
+9.	time.Body.Accelero.Jerk.mean.Z
 10.	time.Body.Gyro.mean.X
 11.	time.Body.Gyro.mean.Y
 12.	time.Body.Gyro.mean.Z
