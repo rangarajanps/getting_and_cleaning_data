@@ -28,7 +28,7 @@ actv1 <- read.table("y_train.txt")
 actv1_dt <- tbl_df(actv1)
 
 # Reading the observation file for training data set
-obs <- read.table("x_train.txt")
+obs1 <- read.table("x_train.txt")
 obs1_dt <- tbl_df(obs1)
 
 
@@ -128,7 +128,17 @@ res_dt <- mutate(mean_std_dt, Activity.Id=actv_lbl[mean_std_dt$Activity.Id,2])
 
 # Using gsub substitute variable names with meaningful text
 # Special characters in variable name is already removed
-# there is scope to do some more rename of variables
+names(res_dt) <- gsub("^t","time.",names(res_dt))
+names(res_dt) <- gsub("^f","freqDomSignal.",names(res_dt))
+names(res_dt) <- gsub("std",".std-dev.",names(res_dt))
+names(res_dt) <- gsub("mean",".mean.",names(res_dt))
+names(res_dt) <- gsub("Body",".Body.",names(res_dt))
+names(res_dt) <- gsub("Gravity",".Gravity.",names(res_dt))
+names(res_dt) <- gsub("Acc",".Accelero.",names(res_dt))
+names(res_dt) <- gsub("Gyro",".Gyro.",names(res_dt))
+names(res_dt) <- gsub("..",".",names(res_dt),fixed=TRUE)
+names(res_dt) <- gsub("Activity.Id","Activity.Name",names(res_dt),fixed=TRUE)
+names(res_dt) <- gsub("$.","",names(res_dt))
 
 ###################################
 # Step 5 : independent tidy data set with the average of 
@@ -136,7 +146,7 @@ res_dt <- mutate(mean_std_dt, Activity.Id=actv_lbl[mean_std_dt$Activity.Id,2])
 ###################################
 
 # Group the data by Activity and Subject
-grpd_dt <- group_by(res_dt,Activity.Id,Subject.Id)
+grpd_dt <- group_by(res_dt,Activity.Name,Subject.Id)
 
 
 # Call summarize with all variables
