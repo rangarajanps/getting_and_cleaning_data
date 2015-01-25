@@ -60,10 +60,12 @@ Step 4 : Appropriately labels the data set with descriptive variable names.
 -----------------------------------------------------------------------------
 
 Using gsub substitute variable names with meaningful text
+
 1. std is expanded to std-dev
 2. Acc is expanded to Accelero
 3. column starting with t is expaned to time
 4. column starting with f is expanded to freqDomSignal
+
 And finally extra . (dot) introduced between words are removed so that there is only 1 . (dot) between words of the name for easy readability
 
 
